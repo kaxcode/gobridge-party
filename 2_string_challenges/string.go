@@ -9,5 +9,7 @@ func StringRpt(value string, repetitions int) string {
 }
 
 func StringHasPrefix(value string, prefix string) bool {
-	return strings
+	// Write the return
 }
+
+// Write the func for StringSplit
