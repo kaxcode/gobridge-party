@@ -17,3 +17,15 @@ func TestStringHasPrefix(t *testing.T) {
 		 t.Errorf("Incorrect, got: %t, want: %t.", string, true)
 	}
 }
+
+func TestStringSplit(t *testing.T) {
+	result := StringSplit("Go-Party", "-")
+	actual := []string{"Go-", "Party"}
+	if result[0]!= actual[0] || result[1] != actual[1] {
+		t.Error(
+			"For input: ", []string{},
+			"expected:", 0,
+			"got:", result,
+		)
+	}
+}
