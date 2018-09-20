@@ -13,12 +13,12 @@ func printingCamelids() {
 	// In Workshop will show how to iterrate and append to new slice and return that new slice.
 }
 
-//Arrays Challenge #2
+// // Arrays Challenge #2
 // func doubleNumbers(x []int) []int {
 // 	// get a slice of integers, return a new slice with each value doubled.
 // }
 
-//Arrays Challenge #3
+// // Arrays Challenge #3
 // func studentSchedules() []string {
 // 	schedules := []string{}
 
@@ -28,4 +28,10 @@ func printingCamelids() {
 // 	// iterate students and classes and append the results to the schedule
 
 // 	// return the schedules slice
+// }
+
+// // Arrays Challenge #4
+// func TwoLargestNumbers(numbers []int) [2]int {
+// 	// Sort the slics, grab the 2 largest numbers, but the 2 largest numbers in a new slice. Return new slice.
+// 	// CLUE: Use the sort library https://golang.org/pkg/sort/
 // }
