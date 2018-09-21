@@ -24,8 +24,10 @@ func TestMultiply(t *testing.T) {
 // }
 
 // func TestDivision(t *testing.T) {
-// 	total := Division(30, 6)
-// 	if total != 5 {
-// 		 t.Errorf("Divison was incorrect, got: %d, want: %d.", total, 5)
+// 	total := Multiple3And5(10)
+// 	expected := 23
+
+// 	if total != expected {
+// 		 t.Errorf("Divison was incorrect, got: %d, want: %d.", total, expected)
 // 	}
 // }

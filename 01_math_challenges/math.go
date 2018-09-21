@@ -11,5 +11,6 @@ func Multiply(a, b int) int {
 
 // Write func for Subtraction
 
-
-// Write func for Division
+// Write func for Sum of multiples of 3 *OR* 5
+// func Multiple3And5(n int) int {
+// }
