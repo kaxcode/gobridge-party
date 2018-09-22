@@ -10,15 +10,15 @@ func printingCamelids() {
 		fmt.Println(i, breed)
 	}
 
-	// In Workshop will show how to iterrate and append to new slice and return that new slice.
+	// In Workshop will show how to iterrate and append to map and to slice.
 }
 
-// // Arrays Challenge #2
+// // Arrays Challenge #1
 // func doubleNumbers(x []int) []int {
 // 	// get a slice of integers, return a new slice with each value doubled.
 // }
 
-// // Arrays Challenge #3
+// // Arrays Challenge #2
 // func studentSchedules() []string {
 // 	schedules := []string{}
 
@@ -30,8 +30,8 @@ func printingCamelids() {
 // 	// return the schedules slice
 // }
 
-// // Arrays Challenge #4
-// func TwoLargestNumbers(numbers []int) [2]int {
+// // Arrays Challenge #3
+// func twoLargestNumbers(numbers []int) [2]int {
 // 	// Sort the slics, grab the 2 largest numbers, but the 2 largest numbers in a new slice. Return new slice.
 // 	// CLUE: Use the sort library https://golang.org/pkg/sort/
 // }

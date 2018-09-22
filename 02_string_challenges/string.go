@@ -8,8 +8,10 @@ func stringRpt(value string, repetitions int) string {
   return strings.Repeat(value, repetitions)
 }
 
-func stringHasPrefix(value string, prefix string) bool {
-	// Write the return
-}
+// // String Challenge #1
+// func stringHasPrefix(value string, prefix string) bool {
+// 	// Write the return
+// }
 
-// Write the func for StringSplit
+// String Challenge #2
+// Write the func for stringSplit
