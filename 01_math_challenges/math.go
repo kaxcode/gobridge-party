@@ -10,10 +10,19 @@ func Multiply(a, b int) int {
 }
 
 // Math Challenge #1
-// Write func for Subtraction
+func subtraction(a, b int) int{
+	return a - b
+}
 
 
 // Math Challenge #2
 // Write func for Sum of multiples of 3 *OR* 5
-// func Multiple3And5(n int) int {
-// }
+func multiple3or5(n int) int {
+	sum := 0;
+  for i := 1; i < n; i++ {
+    if (i % 3 == 0) || (i % 5 == 0) {
+      sum += i
+    }
+  }
+  return sum;
+}

@@ -16,18 +16,18 @@ func TestMultiply(t *testing.T) {
 	}
 }
 
-// func TestSubtraction(t *testing.T) {
-// 	total := Subtraction(37, 5)
-// 	if total != 32 {
-// 		 t.Errorf("Subtraction was incorrect, got: %d, want: %d.", total, 32)
-// 	}
-// }
+func TestSubtraction(t *testing.T) {
+	total := subtraction(37, 5)
+	if total != 32 {
+		 t.Errorf("Subtraction was incorrect, got: %d, want: %d.", total, 32)
+	}
+}
 
-// func TestDivision(t *testing.T) {
-// 	total := Multiple3And5(10)
-// 	expected := 23
+func TestMultiples(t *testing.T) {
+	total := multiple3or5(10)
+	expected := 23
 
-// 	if total != expected {
-// 		 t.Errorf("Divison was incorrect, got: %d, want: %d.", total, expected)
-// 	}
-// }
+	if total != expected {
+		 t.Errorf("Divison was incorrect, got: %d, want: %d.", total, expected)
+	}
+}

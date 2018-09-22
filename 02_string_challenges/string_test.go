@@ -11,12 +11,12 @@ func TestStringRpt(t *testing.T) {
 	}
 }
 
-// func TestStringHasPrefix(t *testing.T) {
-// 	string := stringHasPrefix("PartyTime", "Party")
-// 	if string != true {
-// 		 t.Errorf("Incorrect, got: %t, want: %t.", string, true)
-// 	}
-// }
+func TestStringHasPrefix(t *testing.T) {
+	string := stringHasPrefix("PartyTime", "Party")
+	if string != true {
+		 t.Errorf("Incorrect, got: %t, want: %t.", string, true)
+	}
+}
 
 func TestStringSplit(t *testing.T) {
 	result := stringSplit("Go-Party", "-")

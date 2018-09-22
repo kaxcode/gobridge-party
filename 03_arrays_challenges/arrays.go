@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"sort"
 )
 
 func printingCamelids() {
@@ -13,25 +14,41 @@ func printingCamelids() {
 	// In Workshop will show how to iterrate and append to map and to slice.
 }
 
-// // Arrays Challenge #1
-// func doubleNumbers(x []int) []int {
-// 	// get a slice of integers, return a new slice with each value doubled.
-// }
+// Arrays Challenge #1
+func doubleNumbers(x []int) []int {
+	numbers := []int{}
+	for _, num := range x {
+		numbers = append(numbers, num*2)
+	}
+
+	return numbers
+}
 
 // // Arrays Challenge #2
-// func studentSchedules() []string {
-// 	schedules := []string{}
+func studentSchedules() []string {
+	schedules := []string{}
 
-// 	students := []string{"Kenia", "Troy", "Kristen", "Paul Chin Jr."}
-// 	classes := []string{"Chemistry I", "Calculus", "Software Systems", "Mathematical Foundations of Computing"}
+	students := []string{"Kenia", "Troy", "Kristen", "Paul Chin Jr."}
+	classes := []string{"Chemistry I", "Calculus", "Software Systems", "Mathematical Foundations of Computing"}
 
-// 	// iterate students and classes and append the results to the schedule
+	for _, student := range students {
+		for _, class := range classes {
+			schedules = append(schedules, student + " has been added to " + class )
+		}
+	}
 
-// 	// return the schedules slice
-// }
+	return schedules
+}
 
-// // Arrays Challenge #3
-// func twoLargestNumbers(numbers []int) [2]int {
-// 	// Sort the slics, grab the 2 largest numbers, but the 2 largest numbers in a new slice. Return new slice.
-// 	// CLUE: Use the sort library https://golang.org/pkg/sort/
-// }
+// Arrays Challenge #3
+func twoLargestNumbers(numbers []int) [2]int {
+  a, b := 0, 0
+  for _, v := range numbers {
+    if v > b {
+      a, b = b, v
+    } else if v > a {
+      a = v
+    }
+  }
+  return [2]int{a, b}
+}
